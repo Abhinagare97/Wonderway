@@ -1,0 +1,62 @@
+<% layout ("/layouts/boilerplate") %>
+<row>
+  <div class="col-8 offset-2">
+  <body>
+    <div class="mt-3">
+    <h3>Create a New Listing</h3>
+    </div>
+    <form method="POST" action="/listings" novalidate class="needs-validation">
+      <div class="mb-3">
+      <label for="form-label">Title</label>
+      <input name="listing[title]" placeholder="enter title" 
+        type="text"
+        class="form-control"
+        required/>
+      </div>
+
+      <div class="mb-3" >
+      <label for="form-label" >Description</label>
+      <textarea
+        name="listing[description]"
+        placeholder="enter description"
+        
+        class="form-control"
+        required>
+        </textarea>
+      
+      </div>
+      <div class="mb-3">
+        <label for="form-label">Image url</label>
+      <input
+        name="listing[image]"
+        placeholder="enter image URL/Link"
+        type="text"
+        class="form-control"
+        required/>
+    </div>
+      <div class="mb-3">
+        <label for="form-label">Price</label>
+      <input name="listing[price]" placeholder="enter price" type="number"
+      class="form-control"
+      required />
+    </div>
+    <div class="mb-3">
+      <label for="form-label">Country</label>
+      <input name="listing[country]" placeholder="enter country" type="text" 
+      class="form-control"
+      required/>
+    </div>
+    <div class="mb-3">
+      <label for="form-label">Location</label>
+      <input
+      name="listing[location]"
+        placeholder="enter location"
+        type="text"
+        class="form-control"
+        required/>
+    </div>
+      <button class="btn btn-dark">Add</button>
+    </form>
+  </body>
+</div>
+</row>
